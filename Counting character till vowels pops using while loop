@@ -1,0 +1,16 @@
+vo="aeiouAEIOU"
+u=0
+l=0
+a=" "
+while(a not in vo):
+    a=input("Enter the alp:")
+    if (a.isupper()):
+        u=u+1
+    else:
+        l=l+1
+    if a in "AEIOU":
+        u=u-1
+    if(a in "aeiou"):
+        l=l-1
+print("no of uppercase= ",u)
+print("no of lowercase= ",l)
