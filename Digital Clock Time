@@ -3,9 +3,10 @@ import sys
 h=2
 m=3
 s=0
+#If we want a new output for every 1 second use: /r
+#To get new output use sys.stdout. instead of print statement
 while True:
     sys.stdout.write("\r{:02d} : {:02d} : {:02d}".format(h,m,s))
-    sys.stdout.flush()
     time.sleep(1)
     s=s+1
     if (s==60):
