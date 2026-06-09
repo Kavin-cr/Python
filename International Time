@@ -1,5 +1,6 @@
 import pytz
 from datetime import datetime
 a=pytz.timezone("Europe/London")
+#Where to write as continent/country
 b=datetime.now(a)
 print(b)
