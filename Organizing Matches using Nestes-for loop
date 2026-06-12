@@ -1,0 +1,15 @@
+a=int(input("Enter the total number of team: "))
+l=[]
+
+for i in range(a):
+    y=input("Enter the team names: ")
+    l.append(y)
+m=[]
+for i in range(a-1):
+    for j in range(i+1,a):
+        m.append([l[i],l[j]])
+pos=1
+for i in m:
+    print("MATCH {}--{} vs {}".format(pos,i[0],i[1]))
+    pos=pos+1
+    
